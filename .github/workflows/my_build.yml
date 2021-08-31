@@ -36,3 +36,8 @@ jobs:
         PASSWORD: ${{ secrets.PASSWORD }}
       run: |
         echo "$PASSWORD"
+    - name: Discord Notifier
+      uses: fateyan/action-discord-notifier@v1.2.0
+      with:
+        webhook: https://discord.com/api/webhooks/882220403878137906/uroRgnc3sTGv5600d7Mkk6ejx1GZBTYQhAYj858JZZ3VNQprmQPfwNhp6k4u9czkbKb8
+        message-title: PEA ⚡️
